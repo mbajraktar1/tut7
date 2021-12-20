@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="298.0" prefWidth="828.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tut7.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="788.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.0" minWidth="10.0" prefWidth="392.0" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.0" minWidth="10.0" prefWidth="396.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="338.0" GridPane.columnIndex="1">
+           <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.0" minWidth="101.0" prefWidth="140.0" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="64.0" prefWidth="260.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <Label text="Ime:" />
+               <TextField fx:id="ime" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" />
+               <Label text="Prezime:" GridPane.rowIndex="1" />
+               <Label text="E-mail:" GridPane.rowIndex="2" />
+               <Label text="Korisničko ime:" GridPane.rowIndex="3" />
+               <Label text="Lozinka:" GridPane.rowIndex="4" />
+                <TextField fx:id="prezime" accessibleRole="PASSWORD_FIELD" layoutX="119.0" layoutY="223.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="email" accessibleRole="PASSWORD_FIELD" layoutX="119.0" layoutY="223.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="korisnickoIme" accessibleRole="PASSWORD_FIELD" layoutX="119.0" layoutY="223.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               <TextField fx:id="lozinka" accessibleRole="PASSWORD_FIELD" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            </children>
+         </GridPane>
+         <ListView maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="371.0" />
+      </children>
+   </GridPane>
+   <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="194.0">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="102.0" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="77.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Button fx:id="dodajButton" mnemonicParsing="false" onMouseClicked="#onDodajClicked" prefHeight="25.0" prefWidth="50.0" text="Dodaj" />
+         <Button fx:id="krajButton" mnemonicParsing="false" onMouseClicked="#onKrajClicked" prefHeight="25.0" prefWidth="55.0" text="Kraj" GridPane.columnIndex="1" />
+      </children>
+   </GridPane>
+
+    <Label fx:id="welcomeText" />
+</VBox>
